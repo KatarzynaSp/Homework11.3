@@ -6,6 +6,6 @@ public class Test {
         Array array = new Array();
         int array1[] = {1, 2, 3, 4, 5,};
 
-        System.out.println(Arrays.toString(array.movingElements(array1, 2)));
+        System.out.println(Arrays.toString(array.movingElements(array1, 3)));
     }
 }
