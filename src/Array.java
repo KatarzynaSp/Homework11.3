@@ -1,14 +1,13 @@
 class Array {
 
     static int[] movingElements(int[] array, int n) {
-        if (array != null) {
-            if (n >= array.length || n <= 0) {
-                return array;
-            } else {
-                return slide(array, n);
-            }
-        } else
+        if (array == null) {
             return null;
+        } else if (n >= array.length || n <= 0) {
+            return array;
+        } else {
+            return slide(array, n);
+        }
     }
 
     static int[] slide(int[] array, int n) {
